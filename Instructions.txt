@@ -1,0 +1,22 @@
+
+# Project Setup Instructions
+
+1. **Unzip the File**: Unzip the provided file to access the code for the web extension and backend.
+
+2. **Run the Python Backend**:
+   - Open a terminal and navigate to the `backend` folder.
+   - Install dependencies: `pip install flask flask-cors`
+   - Run the server with `python app.py`.
+
+3. **Load the Extension**:
+   - Open your browser (preferably Chrome or Firefox).
+   - Go to `chrome://extensions/` (Chrome) or `about:debugging#/runtime/this-firefox` (Firefox).
+   - Enable "Developer mode" (Chrome) or "Load Temporary Add-on" (Firefox).
+   - Click "Load unpacked" and select the `web_extension` folder.
+   - You should see the extension icon appear on your toolbar.
+
+4. **Use the Extension**:
+   - Visit a webpage where you want to scrape data.
+   - Click the extension icon and then click the button in the popup.
+   - The content script will scrape the data and send it to the Python server.
+   - Check the Python server console to see the received data.
